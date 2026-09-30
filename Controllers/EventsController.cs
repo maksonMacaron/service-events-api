@@ -19,5 +19,29 @@ namespace service_events_api.Controllers
         {
             return Ok();
         }
+
+        [HttpGet("/{id:guid}")]
+        public IActionResult GetById(Guid id)
+        {
+            return Ok();
+        }
+
+        [HttpPost]
+        public IActionResult Create()
+        {
+            return Ok();
+        }
+
+        [HttpPut]
+        public IActionResult Update()
+        {
+            return Ok();
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteById()
+        {
+            return Ok();
+        }
     }
 }
