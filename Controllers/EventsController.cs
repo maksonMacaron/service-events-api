@@ -17,10 +17,10 @@ namespace service_events_api.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok();
+            return Ok(_eventService.GetAll());
         }
 
-        [HttpGet("/{id:guid}")]
+        [HttpGet("{id:guid}")]
         public IActionResult GetById(Guid id)
         {
             return Ok();

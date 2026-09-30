@@ -1,13 +1,14 @@
-﻿using service_events_api.Models;
+﻿using service_events_api.DTOs;
+using service_events_api.Models;
 
 namespace service_events_api.Services
 {
     public interface IEventService
     {
-        List<Event> GetAll();
-        Event? GetById(Guid id);
-        Event Create();
-        Event Update(Event currentEvent);
+        List<EventDto?> GetAll();
+        EventDto? GetById(Guid id);
+        EventDto? Create(EventDto eventDto);
+        EventDto? Update(Guid id, EventDto eventDto);
         void Delete(Guid id);
     }
 }
